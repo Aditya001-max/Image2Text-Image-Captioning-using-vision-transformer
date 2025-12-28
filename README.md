@@ -196,8 +196,13 @@ vision_transformers_from_scratch/
 `git clone
 https://github.com/Aditya001-max/Image2Text-Image-Captioning-using-vision-transformer.git`
 
-2) Navigate to the project directory
-`cd vision_transformers_from_scratch` 
+2) Navigate to the project directory and install all required libraries.
+   ```
+   pip install -r requirements.txt
+   ```
+
+3) Download dataset and train models.
+
 ---
 ### Comparative Performance Summary
 
