@@ -12,29 +12,35 @@ This project implements an end-to-end image captioning system that converts visu
 The objective is not only performance comparison but also a deep architectural understanding of how transformer-based vision models outperform convolutional pipelines in capturing global visual context.
 
 ## Skills & Technologies Used:
+
 **Machine Learning & Deep Learning**
 - Vision Transformers (ViT)
 - Transformer Encoder–Decoder
 - CNN, LSTM, Self-Attention
 - Image Captioning
 - Sequence Modeling
-**Frameworks**
+  
+**Frameworks & Libraries**
 - PyTorch
 - TensorFlow
 - Keras
+  
 **Computer Vision**
 - Patch Embeddings
 - Feature Extraction
 - OpenCV
+  
 **Natural Language Processing**
 - Tokenization
 - BLEU Score Evaluation
 - NLTK
+  
 **Data & Utilities**
 - NumPy
 - Pandas
 - MS COCO Dataset
 ---
+
 ## Dataset
 - **Name:** MS COCO 2017
 - **Content:** Real-world images with textual descriptions
