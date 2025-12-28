@@ -55,14 +55,17 @@ The objective is not only performance comparison but also a deep architectural u
 **Encoder**
 - Pretrained ResNet50 for visual feature extraction
 - Output flattened into a fixed-length embedding
+  
 **Decoder**
 - LSTM-based language model
 - Generates captions token-by-token
 - Uses teacher forcing during training
+
 **Purpose**
 - Establishes a performance baseline
 - Highlights limitations of convolution-based encoders
 ---
+
 ### Architecture Diagram (Model 1)
 
 ```text
@@ -86,6 +89,7 @@ Generated Caption
 ```
 
 ### Model 2: Vision Transformer + Transformer Decoder
+
 **Vision Transformer Encoder**
 - Image split into fixed-size patches
 - Patch embeddings generated via convolutional projection
@@ -94,6 +98,7 @@ Generated Caption
   - Multi-head self-attention
   - Feed-forward networks
   - Residual connections and normalization
+
 **Transformer Decoder**
 - Masked self-attention for autoregressive caption generation
 - Cross-attention with image embeddings
@@ -139,8 +144,8 @@ Generated Caption
 ## Evaluation Metrics
 - BLEU-1
 - BLEU-2
-These metrics evaluate n-gram overlap between generated captions and ground-truth annotations.
 ---
+
 ## Results
 ### CNN + LSTM Model
 - **BLEU-1:** 0.55
@@ -181,23 +186,20 @@ vision_transformers_from_scratch/
 ```
 <!-- GETTING STARTED -->
 # 🛠 Installation Guide
-1) Clone the repo<br>
+1) Clone the repo
 `git clone
 https://github.com/Aditya001-max/Image2Text-Image-Captioning-using-vision-transformer.git`
 
-2) Navigate to the project directory<br>
+2) Navigate to the project directory
 `cd vision_transformers_from_scratch` 
-<br><br>
-<br/>
 ---
-
 ### Comparative Performance Summary
 
 | Model Architecture | BLEU-1 | BLEU-2 | Global Context Modeling  | Multi-Object Scene Handling |
 |--------------------|--------|--------|--------------------------|-----------------------------|
 | CNN + LSTM         | 0.55   | 0.33   | Limited                  | Moderate                    |
-| ViT + Transformer  | ~0.55  | ~0.33  | **Significantly Improved | **Strong**                  |
-|                    |        |        | (+48%)**                 |                             |                             
+| ViT + Transformer  | ~0.55  | ~0.33  | **Improved (+48%)**      | **Strong**                  |
+                           
 ---
 ### Key Observations
 
@@ -210,3 +212,8 @@ https://github.com/Aditya001-max/Image2Text-Image-Captioning-using-vision-transf
 ### Conclusion
 
 While traditional CNN–LSTM architectures provide solid baseline performance, the Vision Transformer–based approach offers a substantial improvement in **global visual understanding**, resulting in more coherent, context-aware captions without sacrificing linguistic accuracy.
+### 👤 Author
+Aditya
+```
+GitHub: https://github.com/Aditya001-max
+```
